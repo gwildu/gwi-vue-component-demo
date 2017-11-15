@@ -1,0 +1,37 @@
+{
+  "name": "gwi-vue-components",
+  "version": "0.1.0",
+  "description": "commonly used vue gui components",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run storybook",
+    "build": "npm run storybook:build",
+    "storybook": "start-storybook -p 9002 -c .storybook -s ./static",
+    "storybook:build": "build-storybook -o docs -s ./static"
+  },
+  "repository": "https://github.com/gwildu/gwi-vue-components.git",
+  "author": "@gwildu",
+  "license": "MIT",
+  "dependencies": {
+    "@storybook/addon-knobs": "^3.2.15",
+    "@storybook/addon-notes": "^3.2.15",
+    "@storybook/addons": "^3.2.15",
+    "@storybook/vue": "^3.2.15",
+    "css-loader": "^0.28.7",
+    "gwi-vue-components": "^0.2.1",
+    "node-sass": "^4.6.1",
+    "prop-types": "^15.6.0",
+    "raw-loader": "^0.5.1",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "sass-loader": "^6.0.6",
+    "storybook-readme": "^3.0.6",
+    "vue": "^2.5.3",
+    "vue-loader": "^13.5.0",
+    "vue-template-compiler": "^2.5.3",
+    "webpack": "^3.8.1"
+  },
+  "devDependencies": {
+    "prettier": "1.7.4"
+  }
+}
