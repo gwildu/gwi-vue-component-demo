@@ -27157,8 +27157,6 @@ var req = __webpack_require__(693);
 
 req.keys().forEach(function (filename) {
   var name = filename.split('.')[1].split('/')[1];
-  console.log(name);
-  console.log(filename);
   var Comp = req(filename);
   __WEBPACK_IMPORTED_MODULE_1_vue__["default"].component(name, Comp);
 });
@@ -30898,7 +30896,6 @@ var readmePadding = __webpack_require__(713);
 var readmeLayout = __webpack_require__(714);
 
 var addStory = function addStory(storiesOf, knobs, withReadme) {
-  console.log(storiesOf);
   storiesOf.addDecorator(withReadme(readme)).add('Basic example without props', function () {
     return {
       components: { GwiCard: __WEBPACK_IMPORTED_MODULE_0_gwi_vue_components_GwiCard_index_vue__["default"] },
@@ -30979,4 +30976,4 @@ module.exports = "## Code\n\n```html\n// Todo: ...\n```\n"
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=preview.7d2b40d58263092584c9.bundle.js.map
+//# sourceMappingURL=preview.528549b3543a9b9069d1.bundle.js.map

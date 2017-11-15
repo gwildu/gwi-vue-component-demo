@@ -11,7 +11,6 @@ const readmePadding = require('gwi-vue-components/GwiCard/padding.md')
 const readmeLayout = require('gwi-vue-components/GwiCard/layout.md')
 
 const addStory = (storiesOf, knobs, withReadme) => {
-  console.log(storiesOf)
   storiesOf
     .addDecorator(withReadme(readme))
     .add('Basic example without props', () => ({
