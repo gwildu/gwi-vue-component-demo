@@ -1,6 +1,6 @@
 import GwiCard from 'gwi-vue-components/GwiCard/index.vue'
-const nicePicSmall = '/nice_pic_small.jpg'
-const nicePicBig = '/nice_pic_big.jpg'
+const nicePicSmall = 'nice_pic_small.jpg'
+const nicePicBig = 'nice_pic_big.jpg'
 const selectValues = {
   'fill': 'fill',
   'stretch': 'stretch'

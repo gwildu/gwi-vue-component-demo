@@ -30886,8 +30886,8 @@ webpackContext.id = 709;
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gwi_vue_components_GwiCard_index_vue__ = __webpack_require__(379);
 
-var nicePicSmall = '/nice_pic_small.jpg';
-var nicePicBig = '/nice_pic_big.jpg';
+var nicePicSmall = 'nice_pic_small.jpg';
+var nicePicBig = 'nice_pic_big.jpg';
 var selectValues = {
   'fill': 'fill',
   'stretch': 'stretch'
@@ -30979,4 +30979,4 @@ module.exports = "## Code\n\n```html\n// Todo: ...\n```\n"
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=preview.00ac3768262e576c510f.bundle.js.map
+//# sourceMappingURL=preview.06752a82386955a159a2.bundle.js.map
