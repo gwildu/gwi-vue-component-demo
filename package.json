@@ -32,6 +32,6 @@
     "webpack": "^3.8.1"
   },
   "devDependencies": {
-    "prettier": "1.7.4"
+    "babel-core": "^6.26.0"
   }
 }
