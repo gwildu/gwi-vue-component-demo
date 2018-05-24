@@ -13,22 +13,22 @@ const readmeLayout = require('gwi-vue-components/GwiCard/layout.md')
 const addStory = (storiesOf, knobs, withReadme) => {
   storiesOf
     .addDecorator(withReadme(readme))
-    .add('Basic example without props', () => ({
+    .add('without props', () => ({
       components: { GwiCard },
       template: `<GwiCard>Default</GwiCard>`
     }))
     .addDecorator(withReadme(readmeLevel))
-    .add('card with different levels', () => ({
+    .add('elevation levels', () => ({
       components: { GwiCard },
       template: `<GwiCard level="${knobs.number('level', 5)}">Level 5</GwiCard>`
     }))
     .addDecorator(withReadme(readmePadding))
-    .add('card with or without padding', () => ({
+    .add('spacings', () => ({
       components: { GwiCard },
-      template: `<div style="padding: 50px; width: 50%; box-sizing: border-box;"><GwiCard :padding="${knobs.boolean('padding', true)}" level="3"><img style="width: 100%; display: block;" src="${nicePicBig}"/></GwiCard></div>`
+      template: `<GwiCard :padding="${knobs.boolean('padding', true)}" :margin-bottom="${knobs.boolean('margin-bottom', true)}" :margin-top="${knobs.boolean('margin-top', false)}" level="3"><img style="width: 100%; display: block;" src="${nicePicBig}"/></GwiCard>`
     }))
     .addDecorator(withReadme(readmeLayout))
-    .add('card with different layouts', () => ({
+    .add('layouts', () => ({
       components: { GwiCard },
       template: `<GwiCard layout="${knobs.select('layout', selectValues, 'fill')}" :no-padding="true" level="3"><img style="width: 100%; display: block;" src="${nicePicSmall}"/></GwiCard>`
     }))
