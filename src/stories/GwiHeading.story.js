@@ -8,6 +8,14 @@ const addStory = (storiesOf, knobs, withReadme) => {
       components: { GwiHeading },
       template: `<GwiHeading>Basic</GwiHeading>`
     }))
+    .add('spacings', () => ({
+      components: { GwiHeading },
+      template: `<div>
+  <GwiHeading :margin-top="${knobs.boolean('margin-top', true)}">first with margin top by default</GwiHeading>
+  <GwiHeading :margin-top="${knobs.boolean('margin-top', true)}">followings never with margin top</GwiHeading>
+  <GwiHeading :margin-top="${knobs.boolean('margin-top', true)}">...</GwiHeading>
+</div>`
+    }))
     .add('markup levels', () => ({
       components: { GwiHeading },
       template: `<GwiHeading markup-level="${knobs.number('level', 1)}">Markup levels</GwiHeading>`
