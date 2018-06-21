@@ -7,6 +7,5 @@ module.exports = {
       .use('raw-loader')
       .loader('raw-loader')
       .end()
-  },
-  baseUrl: process.env.NODE_ENV === 'production' ? '/gwi-vue-component-demo/' : '/'
+  }
 }

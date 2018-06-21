@@ -2,4 +2,4 @@
 
 This is a demo page for the https://github.com/gwildu/gwi-vue-components library
 
-[demo](https://gwildu.github.io/gwi-vue-component-demo)
+[demo](https://gwi-vue-components.gwildu.me)
