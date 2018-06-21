@@ -61,6 +61,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  @import '~gwi-vue-components/theme/attributes/common/breakpoints';
+
   .demoCase {
     padding-bottom: 20px;
     border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
@@ -69,7 +71,9 @@ export default {
     margin: 20px;
     border: 2px dotted rgba(255, 100, 0, 0.25);
     padding: 0;
-    //line-height: 0;
+    @media screen and (max-width: $breakpoint__s) {
+      margin: 20px 0;
+    }
   }
   .readme {
     margin: 0 20px;
