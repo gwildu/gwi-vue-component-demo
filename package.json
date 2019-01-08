@@ -1,7 +1,10 @@
 {
   "name": "demo-gwi-vue-components",
   "version": "0.1.0",
-  "private": true,
+  "description": "A storybook of common vue components",
+  "repository": "https://github.com/gwildu/gwi-vue-component-demo",
+  "author": "@gwildu",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -24,8 +27,8 @@
     "vue-template-compiler": "^2.5.16"
   },
   "browserslist": [
-    "> 1%",
+    "> 2%",
     "last 2 versions",
-    "not ie <= 8"
+    "not ie <= 10"
   ]
 }
