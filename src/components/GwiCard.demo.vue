@@ -8,6 +8,11 @@
         <GwiCard :level="slotProps.controlValues.level">elevation level</GwiCard>
       </template>
     </GwiDemoCase>
+    <GwiDemoCase name="Hover level" :controls="[...hoverControls, ...elevationControls]" :readme="hoverReadme">
+      <template slot-scope="slotProps">
+        <GwiCard :level="slotProps.controlValues.level" :hover-level="slotProps.controlValues.hover">hover level</GwiCard>
+      </template>
+    </GwiDemoCase>
     <GwiDemoCase name="Spacings" :controls="spacingControls" :readme="spacingReadme">
       <template slot-scope="slotProps">
         <GwiCard :padding="slotProps.controlValues.padding" :margin-top="slotProps.controlValues['margin-top']"
@@ -34,6 +39,7 @@ import GwiHeading from 'gwi-vue-components/GwiHeading'
 import GwiDemoCase from '../tooling/GwiDemoCase'
 import defaultReadme from 'gwi-vue-components/GwiCard/default.md'
 import levelReadme from 'gwi-vue-components/GwiCard/level.md'
+import hoverReadme from 'gwi-vue-components/GwiCard/hover.md'
 import spacingReadme from 'gwi-vue-components/GwiCard/padding.md'
 import layoutReadme from 'gwi-vue-components/GwiCard/layout.md'
 
@@ -55,6 +61,14 @@ export default {
         }
       ],
       levelReadme,
+      hoverControls: [
+        {
+          name: 'hover',
+          type: 'number',
+          defaultValue: 4
+        }
+      ],
+      hoverReadme,
       spacingControls: [
         {
           name: 'padding',
