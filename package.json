@@ -8,6 +8,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "deploy:test": "yarn build && now",
+    "deploy": "yarn build && now && now alias",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

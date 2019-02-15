@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "name": "gwi-vue-component-demo",
+  "type": "static",
+  "static": {
+    "cleanUrls": false,
+    "public": "dist",
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "alias": [
+    "gwi-vue-components.gwildu.me"
+  ],
+  "files": [
+    "dist"
+  ]
+}
