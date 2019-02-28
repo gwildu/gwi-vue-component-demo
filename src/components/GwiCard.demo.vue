@@ -35,7 +35,6 @@
 
 <script>
 import GwiCard from 'gwi-vue-components/GwiCard'
-import GwiHeading from 'gwi-vue-components/GwiHeading'
 import GwiDemoCase from '../tooling/GwiDemoCase'
 import defaultReadme from 'gwi-vue-components/GwiCard/default.md'
 import levelReadme from 'gwi-vue-components/GwiCard/level.md'
@@ -47,7 +46,6 @@ export default {
   name: 'GwiCardDemo',
   components: {
     GwiCard,
-    GwiHeading,
     GwiDemoCase
   },
   data () {
